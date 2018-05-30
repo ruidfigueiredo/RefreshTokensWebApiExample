@@ -1,3 +1,4 @@
+@model int
 <!doctype html>
 <html lang="">
   <head>
@@ -11,6 +12,7 @@
   <body>
       <div class="container">
           <h1>Refresh Tokens in ASP.NET Web Api Core Demo Project</h1>
+          <h4>Access Token lifetime is set to @Model minute(s).</h4>
           <h1>Signed in As: <span id="signedInAs">Anonymous</span></h1>
 
         <div id="feedbackContainer" class="feedback"></div>

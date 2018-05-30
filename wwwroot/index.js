@@ -106,9 +106,9 @@ async function onRevokeClicked(){
     writeFeedback('');
     var revokeResponse = await revoke();
     if (revokeResponse.ok) {
-        writeFeedback('Refersh token was revoked, when the access token expires you won\'t be able to refresh it');        
+        writeFeedback('Refresh token was revoked, when the access token (JWT) expires authenticated requests will start to fail');        
     } else {
-        writeFeedback(`Revoke faile with status code: ${revokeResponse.status}`);
+        writeFeedback(`Revoke failed with status code: ${revokeResponse.status}`);
     }
 }
 
