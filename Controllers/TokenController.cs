@@ -42,7 +42,7 @@ namespace RefreshTokensWebApiExample.Controllers
         [HttpPost, Authorize]
         public async Task<IActionResult> Revoke()
         {
-            var username = User.Identity.Name; //this is mapped to the NameIndentifier claim by default
+            var username = User.Identity.Name;
 
             var user = _usersDb.Users.SingleOrDefault(u => u.Username == username);
             if (user == null) return BadRequest();
