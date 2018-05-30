@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.feedback {
+    margin: 5px 0;
+    padding: 5px;
+    background: rgb(223, 220, 220);
+}
